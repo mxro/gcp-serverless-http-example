@@ -1,4 +1,4 @@
-module mxro.de/gcp-serverless-http-example
+module mxro.de/gcp-serverless-http-example-v2
 
 go 1.19
 

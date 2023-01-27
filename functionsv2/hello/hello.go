@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	functions.HTTP("HelloHTTPV2", HelloHTTPV2)
+	functions.HTTP("hello-http-v2", HelloHTTPV2)
 }
 
 var htmlTemplate = `<html>
