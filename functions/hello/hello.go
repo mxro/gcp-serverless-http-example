@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	functions.HTTP("HelloHTTP", HelloHTTP)
+	functions.HTTP("HelloHTTP", helloHTTP)
 }
 
 var htmlTemplate = `<html>
@@ -25,7 +25,7 @@ var htmlTemplate = `<html>
 	`
 
 // HelloHTTP is an HTTP Cloud Function with a request parameter.
-func HelloHTTP(w http.ResponseWriter, r *http.Request) {
+func helloHTTP(w http.ResponseWriter, r *http.Request) {
 	var my_template *template.Template = template.New("hello")
 	my_template.Parse(htmlTemplate)
 	dt := time.Now()
