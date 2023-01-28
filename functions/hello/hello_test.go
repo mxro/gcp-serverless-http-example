@@ -13,7 +13,7 @@ func TestHelloHTTP(t *testing.T) {
 	rr := httptest.NewRecorder()
 	HelloHTTP(rr, req)
 
-	if got := rr.Body.String(); strings.Contains(got, "Hello There!") {
+	if got := rr.Body.String(); !strings.Contains(got, "Hello there!") {
 		t.Errorf("HelloHTTP() = %q, want %q", got, "Hello There")
 	}
 }
