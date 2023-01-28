@@ -5,6 +5,7 @@ on: [push]
 jobs:
   build:
 
+    name: Building package
     runs-on: ubuntu-latest
     strategy:
       matrix:
